@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FF824C281F62A4DCCE6F36 /* Pods_Gold_Blocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F3B85B711002AF074878D3 /* Pods_Gold_Blocker.framework */; };
+		2719C67620A2CC9E0073E95F /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67520A2CC9E0073E95F /* Guard.swift */; };
+		2719C67820A3E17B0073E95F /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67720A3E17B0073E95F /* Entity.swift */; };
+		2719C67A20A410DD0073E95F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67920A410DD0073E95F /* Player.swift */; };
+		2719C67C20A411BF0073E95F /* GoldBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67B20A411BF0073E95F /* GoldBar.swift */; };
+		2719C67E20A412880073E95F /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67D20A412880073E95F /* Platform.swift */; };
+		2719C68020A412C90073E95F /* Teleporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719C67F20A412C90073E95F /* Teleporter.swift */; };
+		271B3732212AB12D005F675E /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3731212AB12D005F675E /* TutorialPageViewController.swift */; };
+		271B3734212AB460005F675E /* TutorialIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3733212AB460005F675E /* TutorialIntroViewController.swift */; };
+		271B3736212AB56B005F675E /* TutorialSentriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3735212AB56B005F675E /* TutorialSentriesViewController.swift */; };
+		271B3738212AB610005F675E /* TutorialPlatformsTeleportersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3737212AB610005F675E /* TutorialPlatformsTeleportersViewController.swift */; };
+		271B373C212AB74E005F675E /* TutorialStasisFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B373B212AB74E005F675E /* TutorialStasisFieldsViewController.swift */; };
+		271B373E212AB78E005F675E /* TutorialControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B373D212AB78E005F675E /* TutorialControlsViewController.swift */; };
+		271B3740212E88E7005F675E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B373F212E88E7005F675E /* SettingsViewController.swift */; };
+		271B3742212FFA1E005F675E /* ControlSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3741212FFA1E005F675E /* ControlSchemeViewController.swift */; };
+		271B37442130FDC8005F675E /* ControlSchemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B37432130FDC8005F675E /* ControlSchemeTableViewCell.swift */; };
+		271B374621331F0B005F675E /* StartingLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B374521331F0B005F675E /* StartingLevelViewController.swift */; };
+		271B3748213320DF005F675E /* StartLevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B3747213320DF005F675E /* StartLevelTableViewCell.swift */; };
+		271B374C2135169E005F675E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271B374B2135169D005F675E /* AdSupport.framework */; };
+		271B374E2138E893005F675E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271B374D2138E893005F675E /* StoreKit.framework */; };
+		271B37502138EA86005F675E /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B374F2138EA86005F675E /* IAPManager.swift */; };
+		27656E32209C047500064435 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E31209C047500064435 /* GameScreenViewController.swift */; };
+		27656E34209C440400064435 /* WhatWasIThinking in Resources */ = {isa = PBXBuildFile; fileRef = 27656E33209C440400064435 /* WhatWasIThinking */; };
+		27656E38209E81BB00064435 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E37209E81BB00064435 /* ControlView.swift */; };
+		27656E3A209EDEEB00064435 /* GameboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E39209EDEEB00064435 /* GameboardManager.swift */; };
+		27656E3C209EDF0A00064435 /* Gameboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E3B209EDF0A00064435 /* Gameboard.swift */; };
+		27656E3E209EDF3F00064435 /* SpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E3D209EDF3F00064435 /* SpriteManager.swift */; };
+		27656E40209EDF5B00064435 /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E3F209EDF5B00064435 /* Sprite.swift */; };
+		27656E43209EE4AB00064435 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E42209EE4AB00064435 /* ConfigurationManager.swift */; };
+		27656E45209EE6F200064435 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E44209EE6F200064435 /* PersistenceManager.swift */; };
+		27656E49209EE83300064435 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E48209EE83300064435 /* ImageManager.swift */; };
+		27656E4B20A18A9700064435 /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27656E4A20A18A9700064435 /* GameStateManager.swift */; };
+		27759520213FA76400133C5C /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775951F213FA76400133C5C /* ExtrasViewController.swift */; };
+		27759522213FA79600133C5C /* ExtrasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27759521213FA79600133C5C /* ExtrasTableViewCell.swift */; };
+		277ED02820F1212800A4E692 /* StasisField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277ED02720F1212800A4E692 /* StasisField.swift */; };
+		278C8E78210C311E0093D70E /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C8E77210C311E0093D70E /* SoundManager.swift */; };
+		2795D95B214F0E7A00222E33 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795D95A214F0E7A00222E33 /* ContactViewController.swift */; };
+		2795D95D214F7A4E00222E33 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795D95C214F7A4E00222E33 /* MessageUI.framework */; };
+		27F2EA12209BFF220035F7AC /* GoldBlockerAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2EA11209BFF220035F7AC /* GoldBlockerAppDelegate.swift */; };
+		27F2EA14209BFF220035F7AC /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2EA13209BFF220035F7AC /* GameCenterViewController.swift */; };
+		27F2EA17209BFF220035F7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2EA15209BFF220035F7AC /* Main.storyboard */; };
+		27F2EA19209BFF260035F7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F2EA18209BFF260035F7AC /* Assets.xcassets */; };
+		27F2EA1C209BFF260035F7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2EA1A209BFF260035F7AC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B16DE9EDE8254CE3FB5365A /* Pods-Gold Blocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gold Blocker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gold Blocker/Pods-Gold Blocker.debug.xcconfig"; sourceTree = "<group>"; };
+		20F3B85B711002AF074878D3 /* Pods_Gold_Blocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gold_Blocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2719C67520A2CC9E0073E95F /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
+		2719C67720A3E17B0073E95F /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		2719C67920A410DD0073E95F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2719C67B20A411BF0073E95F /* GoldBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldBar.swift; sourceTree = "<group>"; };
+		2719C67D20A412880073E95F /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		2719C67F20A412C90073E95F /* Teleporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teleporter.swift; sourceTree = "<group>"; };
+		271B3731212AB12D005F675E /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		271B3733212AB460005F675E /* TutorialIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialIntroViewController.swift; sourceTree = "<group>"; };
+		271B3735212AB56B005F675E /* TutorialSentriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSentriesViewController.swift; sourceTree = "<group>"; };
+		271B3737212AB610005F675E /* TutorialPlatformsTeleportersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPlatformsTeleportersViewController.swift; sourceTree = "<group>"; };
+		271B373B212AB74E005F675E /* TutorialStasisFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStasisFieldsViewController.swift; sourceTree = "<group>"; };
+		271B373D212AB78E005F675E /* TutorialControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialControlsViewController.swift; sourceTree = "<group>"; };
+		271B373F212E88E7005F675E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		271B3741212FFA1E005F675E /* ControlSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSchemeViewController.swift; sourceTree = "<group>"; };
+		271B37432130FDC8005F675E /* ControlSchemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSchemeTableViewCell.swift; sourceTree = "<group>"; };
+		271B374521331F0B005F675E /* StartingLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingLevelViewController.swift; sourceTree = "<group>"; };
+		271B3747213320DF005F675E /* StartLevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLevelTableViewCell.swift; sourceTree = "<group>"; };
+		271B374B2135169D005F675E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		271B374D2138E893005F675E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		271B374F2138EA86005F675E /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		27656E31209C047500064435 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		27656E33209C440400064435 /* WhatWasIThinking */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatWasIThinking; sourceTree = "<group>"; };
+		27656E37209E81BB00064435 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		27656E39209EDEEB00064435 /* GameboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardManager.swift; sourceTree = "<group>"; };
+		27656E3B209EDF0A00064435 /* Gameboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameboard.swift; sourceTree = "<group>"; };
+		27656E3D209EDF3F00064435 /* SpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteManager.swift; sourceTree = "<group>"; };
+		27656E3F209EDF5B00064435 /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		27656E42209EE4AB00064435 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		27656E44209EE6F200064435 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		27656E48209EE83300064435 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		27656E4A20A18A9700064435 /* GameStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateManager.swift; sourceTree = "<group>"; };
+		2775951F213FA76400133C5C /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
+		27759521213FA79600133C5C /* ExtrasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasTableViewCell.swift; sourceTree = "<group>"; };
+		277ED02720F1212800A4E692 /* StasisField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StasisField.swift; sourceTree = "<group>"; };
+		278C8E77210C311E0093D70E /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		2795D95A214F0E7A00222E33 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		2795D95C214F7A4E00222E33 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		27F2EA0E209BFF220035F7AC /* Gold Blocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gold Blocker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F2EA11209BFF220035F7AC /* GoldBlockerAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldBlockerAppDelegate.swift; sourceTree = "<group>"; };
+		27F2EA13209BFF220035F7AC /* GameCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
+		27F2EA16209BFF220035F7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27F2EA18209BFF260035F7AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F2EA1B209BFF260035F7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27F2EA1D209BFF260035F7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3F3E9EC52C1AE80271A796 /* Pods-Gold Blocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gold Blocker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gold Blocker/Pods-Gold Blocker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F2EA0B209BFF220035F7AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2795D95D214F7A4E00222E33 /* MessageUI.framework in Frameworks */,
+				271B374E2138E893005F675E /* StoreKit.framework in Frameworks */,
+				271B374C2135169E005F675E /* AdSupport.framework in Frameworks */,
+				03FF824C281F62A4DCCE6F36 /* Pods_Gold_Blocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270367CC215FFBD500F079FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				271B37432130FDC8005F675E /* ControlSchemeTableViewCell.swift */,
+				271B3747213320DF005F675E /* StartLevelTableViewCell.swift */,
+				27759521213FA79600133C5C /* ExtrasTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27656E41209EE0E500064435 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				27656E42209EE4AB00064435 /* ConfigurationManager.swift */,
+				27656E44209EE6F200064435 /* PersistenceManager.swift */,
+				27656E48209EE83300064435 /* ImageManager.swift */,
+				27656E39209EDEEB00064435 /* GameboardManager.swift */,
+				27656E3D209EDF3F00064435 /* SpriteManager.swift */,
+				27656E4A20A18A9700064435 /* GameStateManager.swift */,
+				278C8E77210C311E0093D70E /* SoundManager.swift */,
+				271B374F2138EA86005F675E /* IAPManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		27656E46209EE77700064435 /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				27656E3B209EDF0A00064435 /* Gameboard.swift */,
+				27656E3F209EDF5B00064435 /* Sprite.swift */,
+				2719C67720A3E17B0073E95F /* Entity.swift */,
+				2719C67520A2CC9E0073E95F /* Guard.swift */,
+				2719C67920A410DD0073E95F /* Player.swift */,
+				2719C67B20A411BF0073E95F /* GoldBar.swift */,
+				2719C67D20A412880073E95F /* Platform.swift */,
+				2719C67F20A412C90073E95F /* Teleporter.swift */,
+				277ED02720F1212800A4E692 /* StasisField.swift */,
+			);
+			path = "Game Objects";
+			sourceTree = "<group>";
+		};
+		27656E47209EE7AE00064435 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				270367CC215FFBD500F079FC /* Cells */,
+				27F2EA13209BFF220035F7AC /* GameCenterViewController.swift */,
+				27656E31209C047500064435 /* GameScreenViewController.swift */,
+				27656E37209E81BB00064435 /* ControlView.swift */,
+				271B3731212AB12D005F675E /* TutorialPageViewController.swift */,
+				271B3733212AB460005F675E /* TutorialIntroViewController.swift */,
+				271B3735212AB56B005F675E /* TutorialSentriesViewController.swift */,
+				271B3737212AB610005F675E /* TutorialPlatformsTeleportersViewController.swift */,
+				271B373B212AB74E005F675E /* TutorialStasisFieldsViewController.swift */,
+				271B373D212AB78E005F675E /* TutorialControlsViewController.swift */,
+				271B373F212E88E7005F675E /* SettingsViewController.swift */,
+				271B3741212FFA1E005F675E /* ControlSchemeViewController.swift */,
+				271B374521331F0B005F675E /* StartingLevelViewController.swift */,
+				2775951F213FA76400133C5C /* ExtrasViewController.swift */,
+				2795D95A214F0E7A00222E33 /* ContactViewController.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		27F2EA05209BFF220035F7AC = {
+			isa = PBXGroup;
+			children = (
+				27F2EA10209BFF220035F7AC /* Gold Blocker */,
+				27F2EA0F209BFF220035F7AC /* Products */,
+				9EDC0F4738B4C80D2EA26047 /* Pods */,
+				F18FD837DB86798FC1234E64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27F2EA0F209BFF220035F7AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F2EA0E209BFF220035F7AC /* Gold Blocker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F2EA10209BFF220035F7AC /* Gold Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				27656E33209C440400064435 /* WhatWasIThinking */,
+				27F2EA11209BFF220035F7AC /* GoldBlockerAppDelegate.swift */,
+				27656E41209EE0E500064435 /* Managers */,
+				27656E46209EE77700064435 /* Game Objects */,
+				27656E47209EE7AE00064435 /* User Interface */,
+				27F2EA15209BFF220035F7AC /* Main.storyboard */,
+				27F2EA18209BFF260035F7AC /* Assets.xcassets */,
+				27F2EA1A209BFF260035F7AC /* LaunchScreen.storyboard */,
+				27F2EA1D209BFF260035F7AC /* Info.plist */,
+			);
+			path = "Gold Blocker";
+			sourceTree = "<group>";
+		};
+		9EDC0F4738B4C80D2EA26047 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B16DE9EDE8254CE3FB5365A /* Pods-Gold Blocker.debug.xcconfig */,
+				6F3F3E9EC52C1AE80271A796 /* Pods-Gold Blocker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F18FD837DB86798FC1234E64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2795D95C214F7A4E00222E33 /* MessageUI.framework */,
+				271B374D2138E893005F675E /* StoreKit.framework */,
+				271B374B2135169D005F675E /* AdSupport.framework */,
+				20F3B85B711002AF074878D3 /* Pods_Gold_Blocker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F2EA0D209BFF220035F7AC /* Gold Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F2EA20209BFF260035F7AC /* Build configuration list for PBXNativeTarget "Gold Blocker" */;
+			buildPhases = (
+				7E413CA6B273B6FC5A2FB941 /* [CP] Check Pods Manifest.lock */,
+				27F2EA0A209BFF220035F7AC /* Sources */,
+				27F2EA0B209BFF220035F7AC /* Frameworks */,
+				27F2EA0C209BFF220035F7AC /* Resources */,
+				A05E0BE35DC02F8F5C7433CD /* [CP] Embed Pods Frameworks */,
+				387DA9F0368E071686B11B36 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gold Blocker";
+			productName = "Gold Blocker";
+			productReference = 27F2EA0E209BFF220035F7AC /* Gold Blocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F2EA06209BFF220035F7AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Infusions of Grandeur";
+				TargetAttributes = {
+					27F2EA0D209BFF220035F7AC = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 27F2EA09209BFF220035F7AC /* Build configuration list for PBXProject "Gold Blocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F2EA05209BFF220035F7AC;
+			productRefGroup = 27F2EA0F209BFF220035F7AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F2EA0D209BFF220035F7AC /* Gold Blocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F2EA0C209BFF220035F7AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27656E34209C440400064435 /* WhatWasIThinking in Resources */,
+				27F2EA1C209BFF260035F7AC /* LaunchScreen.storyboard in Resources */,
+				27F2EA19209BFF260035F7AC /* Assets.xcassets in Resources */,
+				27F2EA17209BFF220035F7AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		387DA9F0368E071686B11B36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gold Blocker/Pods-Gold Blocker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E413CA6B273B6FC5A2FB941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gold Blocker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05E0BE35DC02F8F5C7433CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gold Blocker/Pods-Gold Blocker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gold Blocker/Pods-Gold Blocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F2EA0A209BFF220035F7AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271B37502138EA86005F675E /* IAPManager.swift in Sources */,
+				2719C67E20A412880073E95F /* Platform.swift in Sources */,
+				27656E4B20A18A9700064435 /* GameStateManager.swift in Sources */,
+				271B3732212AB12D005F675E /* TutorialPageViewController.swift in Sources */,
+				271B3748213320DF005F675E /* StartLevelTableViewCell.swift in Sources */,
+				27656E43209EE4AB00064435 /* ConfigurationManager.swift in Sources */,
+				271B373C212AB74E005F675E /* TutorialStasisFieldsViewController.swift in Sources */,
+				277ED02820F1212800A4E692 /* StasisField.swift in Sources */,
+				271B373E212AB78E005F675E /* TutorialControlsViewController.swift in Sources */,
+				27656E3E209EDF3F00064435 /* SpriteManager.swift in Sources */,
+				278C8E78210C311E0093D70E /* SoundManager.swift in Sources */,
+				27656E40209EDF5B00064435 /* Sprite.swift in Sources */,
+				2719C67A20A410DD0073E95F /* Player.swift in Sources */,
+				27656E49209EE83300064435 /* ImageManager.swift in Sources */,
+				2719C68020A412C90073E95F /* Teleporter.swift in Sources */,
+				271B374621331F0B005F675E /* StartingLevelViewController.swift in Sources */,
+				271B3734212AB460005F675E /* TutorialIntroViewController.swift in Sources */,
+				27656E3C209EDF0A00064435 /* Gameboard.swift in Sources */,
+				27656E32209C047500064435 /* GameScreenViewController.swift in Sources */,
+				27759520213FA76400133C5C /* ExtrasViewController.swift in Sources */,
+				271B37442130FDC8005F675E /* ControlSchemeTableViewCell.swift in Sources */,
+				271B3736212AB56B005F675E /* TutorialSentriesViewController.swift in Sources */,
+				271B3738212AB610005F675E /* TutorialPlatformsTeleportersViewController.swift in Sources */,
+				27656E38209E81BB00064435 /* ControlView.swift in Sources */,
+				271B3742212FFA1E005F675E /* ControlSchemeViewController.swift in Sources */,
+				2719C67C20A411BF0073E95F /* GoldBar.swift in Sources */,
+				27656E3A209EDEEB00064435 /* GameboardManager.swift in Sources */,
+				2719C67620A2CC9E0073E95F /* Guard.swift in Sources */,
+				27F2EA14209BFF220035F7AC /* GameCenterViewController.swift in Sources */,
+				2795D95B214F0E7A00222E33 /* ContactViewController.swift in Sources */,
+				2719C67820A3E17B0073E95F /* Entity.swift in Sources */,
+				27F2EA12209BFF220035F7AC /* GoldBlockerAppDelegate.swift in Sources */,
+				27656E45209EE6F200064435 /* PersistenceManager.swift in Sources */,
+				27759522213FA79600133C5C /* ExtrasTableViewCell.swift in Sources */,
+				271B3740212E88E7005F675E /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27F2EA15209BFF220035F7AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F2EA16209BFF220035F7AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27F2EA1A209BFF260035F7AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F2EA1B209BFF260035F7AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27F2EA1E209BFF260035F7AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27F2EA1F209BFF260035F7AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F2EA21209BFF260035F7AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B16DE9EDE8254CE3FB5365A /* Pods-Gold Blocker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = 97J36M7BW8;
+				INFOPLIST_FILE = "Gold Blocker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infusionsofgrandeur.lootraider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F2EA22209BFF260035F7AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3F3E9EC52C1AE80271A796 /* Pods-Gold Blocker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = 97J36M7BW8;
+				INFOPLIST_FILE = "Gold Blocker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infusionsofgrandeur.lootraider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F2EA09209BFF220035F7AC /* Build configuration list for PBXProject "Gold Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F2EA1E209BFF260035F7AC /* Debug */,
+				27F2EA1F209BFF260035F7AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F2EA20209BFF260035F7AC /* Build configuration list for PBXNativeTarget "Gold Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F2EA21209BFF260035F7AC /* Debug */,
+				27F2EA22209BFF260035F7AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F2EA06209BFF220035F7AC /* Project object */;
+}

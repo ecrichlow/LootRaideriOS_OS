@@ -1,0 +1,201 @@
+Sprite / Tile dimensions: 10 x 10
+Board dimensions: 30 x 20
+
+Spriteset header format:
+GBS - 0x47, 0x42, 0x53
+
+Sprite header format:
+1 byte:
+	bit 0: traversable
+	bit 1: climbable
+	bit 2: hangable
+	bit 3: fallthroughable
+
+Gameboardset header format:
+GBG - 0x47, 0x42, 0x47
+
+Gameboard header format:
+
+1 byte:
+	Level Number
+	
+Tile header format:
+1 byte:
+	bit 0: platform stoppable
+	bit 1: bi-directional transportable
+	bit 2: uni-directional sendable
+	bit 3: uni-directional receivable
+	bit 4: uniquely pairable
+	bit 5: horizontal platformable
+	bit 6: vertical platformable
+	bit 7: escapable
+
+	If bit 4 set:
+		2nd byte:
+			Transporter identifier
+		3rd byte:
+			Identifier of paired Transporter
+
+	If bit 5 or 6 set:
+		2nd byte:
+			bit 0: initial direction up
+			bit 1: initial direction left
+			bit 2: speed: slow
+			bit 3: speed: moderate
+			bit 4: speed: fast
+			bit 5: wait: long
+			bit 6: wait: moderate
+			bit 7: wait: short
+
+Platforms are sprites, not tiles, since they traverse multiple tiles and having them as tiles would force having to change the
+attribute of tiles as they were traversed.
+
+Teleporters are sprites, not tiles, which allows for making them movable.
+
+Platforms can use the first sprite for drawing up until it contacts a tile with a solid tile beneath it. Then it can use the
+animation frames to bring motion to a stop on the solid tile.
+
+-1 is the dfault value for an unset pixel in a sprite or an unset tile in a gameboard. We default those to the color black
+for sprites and the first tile for gameboards.
+
+Transition from one to the next is considered to be once you've hit the halfway point of the tile you're moving into going
+left or up, or you've passed the halfway point of your current tile going right or down.
+
+A characteristic is an inherent and immutable property of a sprite as assigned to the sprite in the sprite editor.
+
+An attribute is a property assigned to a tile on a gameboard and is potentially mutable.
+
+Should make for better gameplay if player can pass by a stasis field that has a guard trapped. But guards can't ever pass
+through stasis fields, and the player can't pass through an empty stasis field.
+
+All PersistenceManager data is saved and retrieved synchronously, as it shouldn't take any significant amount of time to retrieve.
+If we ever start dealing with large data sets it may necessitate adding asynchronous methods.
+
+To manage the features and properties of data storage, all values will be stored as dictionaries. Keys for the dictionaries, and
+keys for all dictionary entries, will be strings.
+
+Animations for sendable and receivable teleporters are based on receiving characters to transmit or sending characters back
+out of the teleporter, not sending trasmissions between teleporters and receiving transmissons from other teleporters. This
+means the animation may be the inverse of what one might expect.
+
+
+Color Scheme:
+
+Sky:
+	113, 254, 248
+
+Beams:
+	Highlight:
+		192, 192, 192
+	Inset:
+		64, 64, 64
+	Rivets:
+		92, 92, 92
+	Body:
+		124, 124, 124
+	Base:
+		32, 32, 32
+
+Ladder:
+	16, 142, 158
+
+Ropes:
+	192, 192, 192
+	Thread:
+		204, 184, 110
+	Twist:
+		162, 138, 75
+
+Platforms:
+	Top:
+		164, 164, 164
+	Lights:
+		64, 194, 255
+	Base:
+		92, 92, 92
+	Turbine:
+		192, 192, 192
+	Turbine Light:
+		70, 253, 51
+	Paddles:
+		124, 124, 124
+	Paddle Burner:
+		228, 65, 42
+
+Teleporter:
+	Level 1:
+		70, 253, 51
+	Level 2:
+		56, 184, 38
+	Level 3:
+		32, 76, 22
+	Level 4:
+		33, 57, 30
+	Level 5:
+		16, 38, 11
+
+Runner:
+	Clothes:
+		162, 138, 75
+	Body:
+		255, 255, 255
+
+Robot:
+	Eyes, Roving Light, Paddles
+		238, 12, 34
+	Limbs:
+		8, 32, 224
+	Gold Indicator:
+		252, 252, 151
+	Empty Indicator:
+		163, 163, 163
+	Body:
+		140, 16, 16
+
+Gold Bar:
+	Body:
+		226, 200, 119
+	Sparkle:
+		252, 252, 151
+
+Shield:
+	Sparks:
+		253, 127, 35
+	Border:
+		64, 194, 255
+	Body:
+		224, 224, 224
+
+
+For In-App purchases, we need to reserve certain identifiers for combo packages that include unlocking all owned levels.
+Let's go with:
+	LR_0002 - Unlock all levels
+	LR_0007 - Buy levels 7 - 30 and unlock all levels
+	LR_0013 - Buy levels 7 - 60 and unlock all levels
+
+On second thought, for restoration purposes, we need to know what each product identifier equates to:
+	LR_0001 - The base game
+	LR_0002 - Unlock all levels
+	LR_0003 - Levels 7 - 12 (Set 2)
+	LR_0004 - Levels 13 - 18 (Set 3)
+	LR_0005 - Levels 19 - 24 (Set 4)
+	LR_0006 - Levels 25 - 30 (Set 5)
+	LR_0007 - Levels 7 - 30 (Sets 2, 3, 4, 5)
+	LR_0008 - Levels 7 - 30 plus unlock all levels (Sets 2, 3, 4, 5)
+	LR_0009 - Levels 31 - 36 (Set 6)
+	LR_0010 - Levels 37 - 42 (Set 7)
+	LR_0011 - Levels 43 - 48 (Set 8)
+	LR_0012 - Levels 49 - 54 (Set 9)
+	LR_0013 - Levels 55 - 60 (Set 10)
+	LR_0014 - Levels 31 - 60 (Sets 6, 7, 8, 9, 10)
+	LR_0015 - Levels 31 - 60 plus unlock all levels (Sets 6, 7, 8, 9, 10)
+	LR_0016 - Levels 7 - 60 (Sets 2, 3, 4, 5, 6, 7, 8, 9, 10)
+	LR_0017 - Levels 7 - 60 plus unlock all levels (Sets 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+It's a bit backwards to have the UIImage dictionary use the images as keys and the Sprites as
+values, but dictionary keys have to be hashable. Sprites are not but UIImages are. So easier
+to go that route than to make Sprites hashable.
+- EGC
+
+Pre-release checklist:
+	Remove "DEV" or "BETA" environment variable from the scheme
