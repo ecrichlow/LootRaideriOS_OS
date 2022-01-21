@@ -22,7 +22,9 @@ The sprites used by the game, as well as the gameboard files for the first 6 lev
 
 Details about the file formats of the sprites and gameboards can be found in the file "WhatWasIThinking". This file also contains information about some of the thought processes that went into the architecture and development of the game.
 
-The file with the values used for Firebase Analytics has been removed. So the project will compile but not run without replacing that file. 
+The file with the values used for Firebase Analytics has been removed. So the project will compile but not run without replacing that file.
+
+Edit: To make building and running the app easier, I re-added the Firebase file, GoogleService-Info.plist, with bogus values inserted. 
 
 ## Support
 
